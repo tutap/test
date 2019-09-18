@@ -1,0 +1,34 @@
+{
+  "title": "",
+  "name": "",
+  "examples": [],
+  "x-id": "ac0256ec-2c34-4b95-b0fe-8f9d30868258",
+  "x-propertyGroupId": "d603c167-9e3d-4236-930f-ea5522d8a989",
+  "x-ref-model-name": "Test_1_200_Payload_41e247e9-09a5-48be-bc31-c05e6e7f38f7",
+  "x-ref-model-version": 1,
+  "type": "object",
+  "properties": {
+    "id": {
+      "title": "id",
+      "x-id": "8ab509d3-5f85-4259-8901-79efb6a14331",
+      "x-propertyGroupId": "c2f17a1d-b04a-471f-99c9-8b510987a74a",
+      "name": "id",
+      "x-ref": "08d7382a-d020-b989-60fb-9784638c3e9f",
+      "x-refVersion": "08d7382a-d021-c52f-4f34-8742359e1c7e",
+      "x-order": 0,
+      "x-ref-data": {
+        "title": "id",
+        "name": "id",
+        "examples": [],
+        "x-order": 0,
+        "x-id": "cb21b010-5797-497e-8972-65be19455de2",
+        "x-propertyGroupId": "1c088093-3bab-4a9e-afc1-bd8ee6667ec3",
+        "x-ref-model-name": "id",
+        "x-ref-model-version": 1,
+        "type": "string",
+        "items": []
+      }
+    }
+  },
+  "items": []
+}
