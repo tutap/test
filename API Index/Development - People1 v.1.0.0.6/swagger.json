@@ -1,0 +1,61 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "People1",
+    "description": "",
+    "contact": {
+      "name": "The API Practice"
+    },
+    "license": {
+      "name": "Private"
+    },
+    "version": "1.0.0.6"
+  },
+  "servers": [
+    {
+      "url": "{protocol}://api-dev.test.com{basePath}",
+      "variables": {
+        "basePath": {
+          "default": "/v1/people1"
+        },
+        "protocol": {
+          "default": "http",
+          "enum": [
+            "https"
+          ]
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/": {
+      "post": {
+        "tags": [
+          "People1"
+        ],
+        "summary": "Create person",
+        "description": "<p id='autoGen'><b>Mock Endpoint URL: </b>http://localhost:3001/api/08d73aa8-e2f6-a554-c5b9-86ab6a5d96d9</p>",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "title": "",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": { }
+      },
+      "get": {
+        "tags": [
+          "People1"
+        ],
+        "summary": "dadfdfdf",
+        "description": "<p id='autoGen'><b>Mock Endpoint URL: </b>http://localhost:3001/api/08d73aa8-e2f6-9a4c-17ea-b85e5c888b4d</p>",
+        "responses": { }
+      }
+    }
+  },
+  "components": { }
+}
