@@ -1,0 +1,97 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Class",
+    "description": "",
+    "contact": {
+      "name": "The API Practice"
+    },
+    "license": {
+      "name": "Private"
+    },
+    "version": "1.0.0.1"
+  },
+  "servers": [
+    {
+      "url": "{protocol}://api-dev.test.com{basePath}",
+      "variables": {
+        "basePath": {
+          "default": "/v1/class"
+        },
+        "protocol": {
+          "default": "http",
+          "enum": [
+            "https"
+          ]
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [
+          "Class"
+        ],
+        "summary": "All class",
+        "description": "<p id='autoGen'><b>Mock Endpoint URL: </b>http://localhost:3001/api/08d73c0e-8b8d-483d-c409-f1504e8d308a</p>",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "title": "Limit",
+              "type": "integer",
+              "example": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "title": "Offset",
+              "type": "integer",
+              "example": 0
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Classes"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Classes": {
+        "title": "Classes",
+        "required": [
+          "className",
+          "classSecret"
+        ],
+        "type": "object",
+        "properties": {
+          "className": {
+            "title": "Class name",
+            "type": "string",
+            "example": "T"
+          },
+          "classSecret": {
+            "title": "Class secret",
+            "type": "string",
+            "example": "xcsad32sdfasdf"
+          }
+        }
+      }
+    }
+  }
+}
