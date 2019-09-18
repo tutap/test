@@ -1,0 +1,195 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Test",
+    "description": "",
+    "contact": {
+      "name": "The API Practice"
+    },
+    "license": {
+      "name": "Private"
+    },
+    "version": "1.0.0.10"
+  },
+  "servers": [
+    {
+      "url": "{protocol}://api-dev.test.com{basePath}",
+      "variables": {
+        "basePath": {
+          "default": "/v1/test"
+        },
+        "protocol": {
+          "default": "http",
+          "enum": [
+            "https"
+          ]
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/": {
+      "post": {
+        "tags": [
+          "Test"
+        ],
+        "summary": "Create Test",
+        "description": "<p id='autoGen'><b>Mock Endpoint URL: </b>http://localhost:3001/api/08d73c0d-bc29-8cad-5fb4-17f0d427e1a5</p>",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "title": "",
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "",
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "summary": "XXX",
+        "description": "<p id='autoGen'><b>Mock Endpoint URL: </b>http://localhost:3001/api/08d73c0d-bc2b-1175-a59a-10a3c5ec5760</p>",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "title": "Limit",
+              "type": "integer",
+              "example": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "title": "Offset",
+              "type": "integer",
+              "example": 0
+            }
+          }
+        ],
+        "responses": { }
+      }
+    },
+    "/{id}": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "summary": "Test",
+        "description": "<p id='autoGen'><b>Mock Endpoint URL: </b>http://localhost:3001/api/08d73c0d-bc2b-1d42-5f1a-7868b1f58219</p>",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "title": "idhehe",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "title": "",
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "title": "id",
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/{id}/bool": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "summary": "Results",
+        "description": "<p id='autoGen'><b>Mock Endpoint URL: </b>http://localhost:3001/api/08d73c0d-bc2b-280f-28c6-20423fe4e7c4</p>",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "title": "Limit",
+              "type": "integer",
+              "example": 20
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "title": "Offset",
+              "type": "integer",
+              "example": 0
+            }
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "title": "idhehe",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/arrayyyy"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "arrayyyy": {
+        "title": "arrayyyy",
+        "uniqueItems": true,
+        "type": "array",
+        "items": {
+          "title": "xxx",
+          "type": "boolean"
+        },
+        "nullable": true
+      }
+    }
+  }
+}
