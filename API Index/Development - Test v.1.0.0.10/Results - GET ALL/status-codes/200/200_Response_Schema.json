@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "",
+  "name": "",
+  "examples": [],
+  "x-id": "78240f06-c676-4761-add6-567d2b3c7f6a",
+  "x-propertyGroupId": "b9ea3e5c-f48f-4e31-adab-e569534f9843",
+  "x-ref-model-name": "Results_3_200_Payload_48e8b9ff-a8b6-4726-b38c-38b5d704eb81",
+  "x-ref-model-version": 4,
+  "x-required": false,
+  "x-ref": "08d73b66-dbaa-9c90-2f0e-98ab51afaf9d",
+  "x-refVersion": "08d73c0c-4af5-661b-ddb8-32d95385006c",
+  "x-ref-data": {
+    "title": "arrayyyy",
+    "x-allow-null": true,
+    "name": "arrayyyy",
+    "examples": [],
+    "x-id": "c9579130-1c63-4a24-aac4-3c3a6adf23b6",
+    "x-propertyGroupId": "6ce2ddc6-a2fc-4631-9799-d3464fcf2207",
+    "x-ref-model-name": "arrayyyy",
+    "x-ref-model-version": 5,
+    "x-required": false,
+    "type": "array",
+    "items": [
+      {
+        "title": "xxx",
+        "x-id": "548ab786-a287-4b00-97ba-4b18b8d00f8c",
+        "x-propertyGroupId": "e67c1968-5499-4219-b2b6-183a4497a5a1",
+        "name": "array-item-0",
+        "x-ref": "08d73b66-dbab-692d-245c-769d404d4722",
+        "x-refVersion": "08d73b66-dbac-36ac-40e4-e80c49436303",
+        "x-ref-data": {
+          "title": "xxx",
+          "name": "xxx",
+          "examples": [],
+          "x-id": "f01dee5c-c02f-42e2-9b3e-ce06d877736f",
+          "x-propertyGroupId": "565e32a1-2d04-415a-9c43-1a86f49ba324",
+          "x-ref-model-name": "xxx",
+          "x-ref-model-version": 1,
+          "type": "boolean",
+          "items": []
+        },
+        "x-required": 0
+      },
+      {
+        "title": "sensitive",
+        "x-id": "547b26e0-c323-4fca-bd58-eb5a8b753d53",
+        "x-propertyGroupId": "04999245-bbb5-469a-8138-2267b3287d25",
+        "name": "array-item-1",
+        "x-ref": "08d73bf6-5d5b-6fcb-3435-24f177aa670a",
+        "x-refVersion": "08d73c02-c501-05ea-53b7-196b2515292d",
+        "x-ref-data": {
+          "title": "sensitive",
+          "name": "sensitive",
+          "examples": [
+            "sss"
+          ],
+          "x-sensitive": true,
+          "x-id": "a64d2ff1-d557-4aff-b247-47e12418aa92",
+          "x-propertyGroupId": "10f654f4-48ba-4ac1-9d5d-46903766d91f",
+          "x-ref-model-name": "sensitive",
+          "x-ref-model-version": 3,
+          "x-required": false,
+          "x-allow-null": true,
+          "type": "string",
+          "default": "heh",
+          "items": []
+        },
+        "x-required": 1
+      },
+      {
+        "title": "sss",
+        "x-id": "b49ec574-fb0c-41a4-b769-cf6b7e55475b",
+        "x-propertyGroupId": "b17b2248-a79d-4652-acdf-d225e4d73b5c",
+        "name": "array-item-2",
+        "x-ref": "08d73bf6-9da1-b5eb-a96d-aa902b37ab3a",
+        "x-refVersion": "08d73bf6-9da2-2a27-cab6-5e1e727fec52",
+        "x-ref-data": {
+          "title": "sss",
+          "x-pii": true,
+          "name": "sss",
+          "examples": [
+            ""
+          ],
+          "x-id": "964f8d42-a886-4c8a-b551-230e2abe9d7b",
+          "x-propertyGroupId": "59ab7915-9c3d-4293-bf26-02750123d152",
+          "x-ref-model-name": "sss",
+          "x-ref-model-version": 1,
+          "type": "string",
+          "items": []
+        },
+        "x-required": 2
+      },
+      {
+        "title": "card",
+        "x-id": "10497893-6fea-474f-a41b-9a34a8c4818a",
+        "x-propertyGroupId": "26123b46-141f-4d76-949d-204cbee1390f",
+        "name": "array-item-3",
+        "x-ref": "08d73c0c-4afa-f3d7-5ec1-932afb18187d",
+        "x-refVersion": "08d73c0c-4afb-98d5-2988-ab486c6f4b7f",
+        "x-order": null,
+        "x-ref-data": {
+          "title": "card",
+          "x-pii": true,
+          "examples": [
+            ""
+          ],
+          "name": "card",
+          "x-sensitive": true,
+          "x-id": "3c8f74d9-d31d-4204-be3f-9f10289097b3",
+          "x-propertyGroupId": "8684aa5e-a38e-40df-9229-a844be736f96",
+          "x-ref-model-name": "card",
+          "x-ref-model-version": 1,
+          "type": "string",
+          "items": []
+        }
+      }
+    ],
+    "uniqueItems": true
+  },
+  "items": []
+}
