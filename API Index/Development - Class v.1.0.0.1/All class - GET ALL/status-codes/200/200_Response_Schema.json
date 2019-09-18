@@ -1,0 +1,78 @@
+{
+  "title": "",
+  "x-ref": "08d73c0e-774e-248b-309e-1c7f8b4ac9b7",
+  "x-refVersion": "08d73c0e-7752-3fb2-db2e-cc53879a62c7",
+  "name": "",
+  "examples": [],
+  "x-ref-data": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Classes",
+    "name": "Classes",
+    "examples": [],
+    "x-id": "a5c107f1-978e-4c86-87f8-28b792a85e94",
+    "x-propertyGroupId": "636c360b-5ac3-4ed7-9c34-840eef61dfda",
+    "x-ref-model-name": "Classes",
+    "x-ref-model-version": 1,
+    "type": "object",
+    "properties": {
+      "className": {
+        "title": "Class name",
+        "x-id": "547e37cc-e2de-4f18-98ff-2e187b9326bb",
+        "x-propertyGroupId": "f571899a-8c8e-4699-89a3-d9d518abf6e7",
+        "name": "className",
+        "x-ref": "08d73c0e-774f-05a9-56d6-2ba88eac3eaa",
+        "x-refVersion": "08d73c0e-774f-fccf-56a7-b30f7cf02380",
+        "x-order": 0,
+        "x-ref-data": {
+          "title": "Class name",
+          "x-pii": true,
+          "name": "className",
+          "examples": [
+            "T"
+          ],
+          "x-order": 0,
+          "x-id": "f4f5a998-1294-4543-95e2-f7dd7e899e9f",
+          "x-propertyGroupId": "950d8170-41e8-41bc-89ba-a5e49c961a76",
+          "x-ref-model-name": "Class name",
+          "x-ref-model-version": 1,
+          "type": "string",
+          "items": []
+        }
+      },
+      "classSecret": {
+        "title": "Class secret",
+        "x-id": "e89dffe9-0e4d-46c9-8a62-228ec1022bbb",
+        "x-propertyGroupId": "16cdf00d-0433-44c2-8249-ce1aaa4552ef",
+        "name": "classSecret",
+        "x-ref": "08d73c0e-7750-d4f2-c083-04633cab25c2",
+        "x-refVersion": "08d73c0e-7751-7700-4744-6473d0994b00",
+        "x-order": 1,
+        "x-ref-data": {
+          "title": "Class secret",
+          "name": "classSecret",
+          "examples": [
+            "xcsad32sdfasdf"
+          ],
+          "x-sensitive": true,
+          "x-order": 1,
+          "x-id": "e6ce3a03-bd9e-48a9-b3dc-46b968b427b0",
+          "x-propertyGroupId": "f3bf552b-6366-4199-ba61-7aae1e7e838e",
+          "x-ref-model-name": "Class secret",
+          "x-ref-model-version": 1,
+          "type": "string",
+          "items": []
+        }
+      }
+    },
+    "required": [
+      "className",
+      "classSecret"
+    ],
+    "items": []
+  },
+  "x-id": "0080a076-87af-4d94-84fa-c5ce4418f9e2",
+  "x-propertyGroupId": "22fd6dd6-4703-4842-89dc-2831ad273a16",
+  "x-ref-model-name": "All class_1_200_Payload_8c8cc6b2-e426-44f4-b619-9894ce21d0ca",
+  "x-ref-model-version": 1,
+  "items": []
+}
