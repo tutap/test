@@ -1,0 +1,117 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "School",
+    "description": "",
+    "contact": {
+      "name": "The API Practice"
+    },
+    "license": {
+      "name": "Private"
+    },
+    "version": "1.0.0.1"
+  },
+  "servers": [
+    {
+      "url": "{protocol}://api-dev.test.com{basePath}",
+      "variables": {
+        "basePath": {
+          "default": "/v1/school"
+        },
+        "protocol": {
+          "default": "http",
+          "enum": [
+            "https"
+          ]
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/teacher": {
+      "post": {
+        "tags": [
+          "School"
+        ],
+        "summary": "Add teacher",
+        "description": "<p id='autoGen'><b>Mock Endpoint URL: </b>http://localhost:3001/api/08d73cf3-97c2-0542-5d72-90d76976b3db</p>",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Teacher"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Teacher"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Teacher": {
+        "title": "Teacher",
+        "type": "object",
+        "properties": {
+          "person": {
+            "$ref": "#/components/schemas/Person"
+          }
+        }
+      },
+      "Person": {
+        "title": "Person",
+        "required": [
+          "personId",
+          "firstName",
+          "lastName",
+          "dob"
+        ],
+        "type": "object",
+        "properties": {
+          "personId": {
+            "title": "Person Id",
+            "type": "string",
+            "description": "<p>This is the id of person</p>",
+            "example": "46b1cbfb-5b57-40eb-9615-9902f49c2d0e"
+          },
+          "firstName": {
+            "title": "First Name",
+            "minLength": 1,
+            "type": "string",
+            "example": "David"
+          },
+          "middleName": {
+            "title": "Middle Name",
+            "type": "string",
+            "example": null
+          },
+          "lastName": {
+            "title": "Last Name",
+            "minLength": 1,
+            "type": "string",
+            "example": "Yonan"
+          },
+          "dob": {
+            "title": "DoB",
+            "type": "string",
+            "nullable": true,
+            "example": "1/1/1999"
+          }
+        },
+        "description": "<p>A person</p>"
+      }
+    }
+  }
+}
